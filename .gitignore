@@ -32,6 +32,7 @@
 
 # other
 .classpath
+.project
 
 # Eclipse
 *.pydevproject
