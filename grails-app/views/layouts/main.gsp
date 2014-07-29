@@ -1,3 +1,4 @@
+
 <%
 //= template_name Simple
 %>
@@ -29,9 +30,12 @@
 		<a href="http://grails.org"><asset:image src="grails_logo.png"
 				alt="Grails" /></a>
 		<g:link controller="dashboard" namespace="spud_admin">Spud Dashboard</g:link>
-	</div>	
+	</div>
+	<sp:menu name="Main" id="navigation" />
 	<g:layoutBody />
-	<div class="footer" role="contentinfo"><sp:snippet name="Footer"/></div>
+	<div class="footer" role="contentinfo">
+		<sp:snippet name="Footer" />
+	</div>
 	<div id="spinner" class="spinner" style="display: none;">
 		<g:message code="spinner.alt" default="Loading&hellip;" />
 	</div>

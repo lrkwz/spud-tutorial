@@ -9,3 +9,6 @@ Tutorial steps are "cristalyzed" in branches. The main branch corresponds to the
 2.1 Add template definition to main layout
 2.2 Add the footer snippet reference in main.gsp
 2.2 Browse to dashboard and define a footer snippet
+3. Adding a menu:
+2.1 Add the manu reference tag in main.gsp
+2.2 Browse to dashboard and define a menu
