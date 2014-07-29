@@ -1,6 +1,7 @@
 
 <%
 //= template_name Simple
+//= html body
 %>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
@@ -13,7 +14,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title><g:layoutTitle default="Grails" /></title>
+<title><g:layoutTitle default="Grails" /> ${page?.name}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="${assetPath(src: 'favicon.ico')}"
 	type="image/x-icon">
@@ -32,6 +33,7 @@
 		<g:link controller="dashboard" namespace="spud_admin">Spud Dashboard</g:link>
 	</div>
 	<sp:menu name="Main" id="navigation" />
+	<g:pageProperty name="page.body" />
 	<g:layoutBody />
 	<div class="footer" role="contentinfo">
 		<sp:snippet name="Footer" />
